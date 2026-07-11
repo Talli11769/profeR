@@ -1,0 +1,384 @@
+html,
+body{
+    background-color:#D8E9F0;
+    color:#333333;
+}
+
+/*==========================
+        LOGO
+==========================*/
+
+.imgP{
+    width:90%;
+    max-width:550px;
+    margin:25px auto;
+    padding:20px;
+    background:#f7e6ad;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.imgP:hover{
+    box-shadow:0 4px 8px rgba(0,0,0,.2);
+}
+
+.imgP img{
+    width:100%;
+    height:auto;
+    display:block;
+    transition:.7s;
+}
+
+.imgP img:hover{
+    transform:scale(1.08);
+}
+
+/*==========================
+      QUIÉN SOY
+==========================*/
+
+.qnS{
+    background:#CDE8D5;
+    padding:20px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.qnS:hover{
+    background:#90dab4;
+    box-shadow:0 4px 8px rgba(0,0,0,.2);
+}
+
+.qnS h1{
+    position:relative;
+    transition:.5s;
+}
+
+.qnS:hover h1{
+    left:60%;
+}
+
+.qnS p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+/*==========================
+        NIVELES
+==========================*/
+
+.niveles{
+    background:#f7e6ad;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    transition:.3s;
+}
+
+.niveles:hover{
+    background:#f4d35e;
+    box-shadow:0 4px 8px rgba(0,0,0,.2);
+}
+
+.barra{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:20px;
+}
+
+/*==========================
+        TARJETAS
+==========================*/
+
+.nivel{
+
+    background:#f4d35e;
+
+    width:280px;
+    min-height:350px;
+
+    border-radius:10px;
+    padding:20px;
+
+    transition:.3s;
+
+    position:relative;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+}
+
+.niveles:hover .nivel{
+
+    background:#f7e6ad;
+
+}
+
+.nivel h2{
+
+    margin-bottom:20px;
+
+}
+
+/*==========================
+ IMAGEN Y TEXTO SUPERPUESTOS
+==========================*/
+
+.nivel img{
+
+    width:170px;
+
+    height:auto;
+
+    position:absolute;
+
+    left:50%;
+
+    top:90px;
+
+    transform:translateX(-50%);
+
+    transition:.6s;
+
+    border-radius:6px;
+
+}
+
+.nivel ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+    position:absolute;
+
+    left:50%;
+
+    top:90px;
+
+    width:80%;
+
+    transform:translateX(-50%) scale(0);
+
+    opacity:0;
+
+    transition:.6s;
+
+    text-align: left;
+    
+}
+
+.nivel p{
+    padding:0;
+
+    margin:0;
+
+    position:absolute;
+
+    left:50%;
+
+    top:90px;
+
+    width:80%;
+
+    transform:translateX(-50%) scale(0);
+
+    opacity:0;
+
+    transition:.6s;
+
+    text-align: left;
+}
+
+
+/*==========================
+      EFECTO PC
+==========================*/
+
+.nivel:hover img{
+
+    transform:translateX(-50%) scale(0);
+
+    opacity:0;
+
+}
+
+.nivel:hover ul{
+
+    transform:translateX(-50%) scale(1);
+
+    opacity:1;
+
+    text-align: left;
+
+}
+
+.nivel:hover p{
+
+    transform:translateX(-50%) scale(1);
+
+    opacity:1;
+
+    text-align: left;
+
+}
+
+/*==========================
+  EFECTO CELULAR (JS)
+==========================*/
+
+.nivel.activa img{
+
+    transform:translateX(-50%) scale(0);
+
+    opacity:0;
+
+}
+
+.nivel.activa ul{
+
+    transform:translateX(-50%) scale(1);
+
+    opacity:1;
+
+    text-align: left;
+
+}
+
+.nivel.activa p{
+
+    transform:translateX(-50%) scale(1);
+
+    opacity:1;
+
+    text-align: left;
+
+}
+
+/*==========================
+      RESPONSIVE
+==========================*/
+
+@media(max-width:992px){
+
+    .barra{
+
+        gap:20px;
+
+    }
+
+    .nivel{
+
+        width:45%;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .imgP{
+
+        width:95%;
+
+    }
+
+    .qnS:hover h1{
+
+        left:0;
+
+    }
+
+    .barra{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .nivel{
+
+        width:95%;
+
+        max-width:350px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .qnS p{
+
+        font-size:16px;
+
+    }
+
+    .nivel{
+
+        min-height:330px;
+
+    }
+
+    .nivel img{
+
+        width:150px;
+
+    }
+
+}
+
+footer{
+    text-align: center;
+}
+
+.contacto{
+    background-color: #F7B2AD;
+    color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+.contacto:hover{
+    background-color: #f7aed6;
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+    transition: .3s ease;
+}
+.contacto p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+/*==========================
+        MAPA
+==========================*/
+
+.mapa{
+    width:100%;
+    max-width:600px;
+    height:450px;
+    border-radius:10px;
+    display:block;
+    margin:auto;
+}
+
+@media (max-width:768px){
+
+    .mapa{
+        width:95%;
+        height:250px;
+    }
+
+}

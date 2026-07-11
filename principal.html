@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/principal.css">
+        <link rel="icon" type="image/x-icon" href="../img/icn.ico">
+        <title>Menú principal</title>
+    </head>
+    <body>
+        <header>
+            <!-- Menú de navegación -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Profe R</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menuNavegacion">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Niveles</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#primaria">Primaria</a></li>
+                                    <li><a class="dropdown-item" href="#secundaria">Secundaria</a></li>
+                                    <li><a class="dropdown-item" href="#preparatoria">Preparatoria</a></li>
+                                    <li><a class="dropdown-item" href="#examenes">Exámenes de admisión</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#contacto">Contáctame</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="imgP">
+                <img src="../img/logo.png" alt="Imagen de logo" style="height: 500px; width: auto;">
+            </div>
+        </header>
+        <main style="padding: 10px;">
+            <!--Presentación-->
+            <div class="qnS">
+                <h1>¿Quién soy?</h1>
+                <br>
+                <p>
+                    Mi nombre es <strong>Raúl Castillo</strong>, soy profesor de diversas asignaturas y me dedico a ayudar 
+                    a los estudiantes de primaria, secundaria y preparatoria a comprender los conceptos y desarrollar sus habilidades.
+                </p>
+                <p>Mi especialidad son las Matemáticas, la Física, Historia y el Inglés.</p>
+                <p>
+                    Mi metodología de enseñanza se basa en las "tres P": Preparación, Práctica y Perseverancia.
+                    Este método <strong>es una estrategia pedagógica</strong> que busca <strong>desarrollar el aprendizaje de manera estructurada y sostenida</strong>.
+                </p>
+            </div>
+            <br>
+            <!--Sección de niveles-->
+            <div class="niveles">
+                <h1>Niveles de aprendizaje</h1>
+                <div class="barra">
+                    <div class="nivel" id="primaria">
+                        <h2>Primaria</h2>
+                        <img src="../img/primaria.png" alt="Imagen de primaria" style="height: 200px; width: auto;">
+                        <ul>
+                            <li>Especializado en 4to, 5to y 6to grado</li>
+                            <li>Especializado en:</li>
+                            <ol>
+                                <strong>
+                                    <li>Matemáticas</li>
+                                    <li>Español</li>
+                                    <li>Historia</li>
+                                    <li>Inglés</li>
+                                </strong>
+                            </ol>
+                            <li style="font-size: larger;">Precio: <strong>$800 mesuales</strong></li>
+                        </ul>
+                    </div>
+                    <div class="nivel" id="secundaria">
+                        <h2>Secundaria</h2>
+                        <img src="../img/secundaria.png" alt="Imagen de secundaria" style="height: 200px; width: auto;">
+                        <p style="font-size: larger;">Precio: <strong>$1100 mesuales</strong></p>
+                    </div>
+                    <div class="nivel" id="preparatoria">
+                        <h2>Preparatoria</h2>
+                        <img src="../img/preparatoria.png" alt="Imagen de preparatoria" style="height: 200px; width: auto;">
+                        <ul>
+                            <li>Especializado en tronco común</li>
+                            <li>Materias específicas:</li>
+                            <ol>
+                                <strong>
+                                    <li>Dibujo técnico</li>
+                                    <li>Arquitectura</li>
+                                    <li>Lógica</li>
+                                    <li>Filosofía</li>
+                                    <li>Literatura</li>
+                                </strong>
+                            </ol>
+                            <li style="font-size: larger;">Precio: <strong>$1600 mesuales</strong></li>
+                        </ul>
+                    </div>
+                    <div class="nivel" id="examenes">
+                        <h2>Exámenes</h2>
+                        <img src="../img/examenes.png" alt="Imagen de exámenes" style="height: 200px; width: auto;">
+                        <ul>
+                            <li>Medio superior</li>
+                            <li>Superior:</li>
+                            <ol>
+                                <strong>
+                                    <li>Examen de admisión a la UNAM</li>
+                                    <li>Examen de admisión a la UAM</li>
+                                    <li>Examen de admisión al IPN</li>
+                                </strong>
+                            </ol>
+                            <li style="font-size: larger;">Precio: <strong>$1600 mesuales</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <h4><strong>Nota:</strong> Los pagos solo se aceptan en efectivo.</h4>
+            </div>
+        </main>
+        <footer style="padding: 10px;">
+            <div id="contacto" class="contacto">
+                <h1>Contáctame</h1>
+                <p>Si deseas contactarme y obtener más información, puedes hacerlo a través de los siguientes medios:</p>
+                <ul type="none">
+                    <strong>
+                        <li>Teléfono: 55 1931 5064</li>
+                        <li>Correo electrónico: <a href="mailto:rabit2001@gmail.com">rabit2001@gmail.com</a></li>
+                        <li>Facebook: <a href="https://www.facebook.com/ralf.castle.9" target="_blank">Ralf Castle</a></li>
+                    </strong>
+                </ul>
+                <br>
+                <h2>Estoy ubicado en:</h2>
+                <p>Ote. 235 33, Agrícola Oriental, Iztacalco, 08500 Ciudad de México, CDMX</p>
+                <iframe
+                    class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.4766980660197!2d-99.08179712491538!3d19.391798781878887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc4a8027e681%3A0x109abcb9460f2538!2sOte.%20235%2033%2C%20Agr%C3%ADcola%20Oriental%2C%20Iztacalco%2C%2008500%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1783804814489!5m2!1ses-419!2smx"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+                <p>Casa color verde menta</p>
+            </div>
+        </footer>
+        <br>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
